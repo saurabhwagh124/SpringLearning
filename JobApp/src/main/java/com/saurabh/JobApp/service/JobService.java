@@ -2,6 +2,7 @@ package com.saurabh.JobApp.service;
 
 import com.saurabh.JobApp.model.JobPost;
 import com.saurabh.JobApp.repo.JobRepo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ import java.util.List;
 @Service
 public class JobService {
 
+    @Autowired
     private JobRepo repo;
 
 
