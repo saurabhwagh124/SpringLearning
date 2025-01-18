@@ -15,7 +15,7 @@ public class SpringJdbCexApplication {
 		ApplicationContext context = SpringApplication.run(SpringJdbCexApplication.class, args);
 
 		Student s = context.getBean(Student.class);
-		s.setRollNo(66);
+		s.setRollNo(60);
 		s.setName("Saurabh");
 		s.setMarks(45);
 

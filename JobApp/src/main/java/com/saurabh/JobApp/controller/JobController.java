@@ -2,7 +2,6 @@ package com.saurabh.JobApp.controller;
 
 import com.saurabh.JobApp.model.JobPost;
 import com.saurabh.JobApp.service.JobService;
-import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
