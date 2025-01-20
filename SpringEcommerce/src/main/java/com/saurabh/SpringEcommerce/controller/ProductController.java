@@ -2,13 +2,11 @@ package com.saurabh.SpringEcommerce.controller;
 
 import com.saurabh.SpringEcommerce.model.Product;
 import com.saurabh.SpringEcommerce.service.ProductService;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-
 import java.io.IOException;
 import java.util.List;
 
