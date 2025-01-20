@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class JobRestController {
@@ -39,5 +40,16 @@ public class JobRestController {
     public String deleteJob(@PathVariable int postId){
         jobService.deleteJob(postId);
         return "Deleted";
+    }
+
+    @GetMapping("load")
+    public String loadData(){
+        jobService.load();
+        return "success";
+    }
+
+    @GetMapping("jobPosts/keyword/{keyword}")
+    public List<JobPost> searchByKeyword(@PathVariable("keyword") String keyword){
+       return jobService.search(keyword);
     }
 }
